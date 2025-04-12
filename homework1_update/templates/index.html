@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Portal</title>
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h2>Loan Application Portal</h2>
+
+    <h3>Apply for a Loan</h3>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="zipcode" placeholder="Enter your zipcode">
+    <button onclick="apply()">Apply</button>
+    <p id="apply_result"></p>
+
+    <h3>Check Status</h3>
+    <input type="number" id="status_id" placeholder="Enter application ID">
+    <button onclick="checkStatus()">Check</button>
+    <p id="status_result"></p>
+
+    <h3>Update Status</h3>
+    <input type="number" id="update_id" placeholder="Enter application ID">
+    <select id="new_status">
+        <option value="received">Received</option>
+        <option value="processing">Processing</option>
+        <option value="accepted">Accepted</option>
+        <option value="rejected">Rejected</option>
+    </select>
+    <button onclick="updateStatus()">Update</button>
+    <p id="update_result"></p>
+</body>
+</html>
